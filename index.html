@@ -3,17 +3,54 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>Convert currency</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-dbvnxcv
+    <main>
+        <h2>Currency Converter</h2>
+
+        <form action="">
+            <div class="amount">
+                <p>Enter amount</p>
+                <input type="text" value="100">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                        <select name="from">
+                        </select>
+                    </div>
+                </div>
 
 
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/PK/flat/64.png" alt="">
+                        <select name="to">
+                        </select>
+                    </div>
+                </div>
+            </div>
 
-    <script href="script.js"></script>
+
+            <div class="msg">1 USD is 270 in PKR</div>
+            <button>Get rates.</button>
+        </form>
+    </main>
+
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
