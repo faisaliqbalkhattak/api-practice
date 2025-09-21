@@ -30,6 +30,8 @@ input {
     border: none;
     outline: none;
     border-radius: 0.5rem;
+    background-color: #34495e;
+    color: #ecf0f1;
 }
 
 form input {
@@ -72,6 +74,15 @@ form input {
     font-size: 1rem;
     width: auto;
     color: #ecf0f1;
+    background-color: #34495e;
+    border: none;
+    padding: 0.5rem;
+}
+
+.select-container select option {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 0.5rem;
 }
 
 .msg {
