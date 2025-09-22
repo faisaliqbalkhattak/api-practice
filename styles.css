@@ -116,53 +116,53 @@ p {
 
 
 
-@media (max-width: 500px) {
- 
+@media (max-width: 1000px) {
 
 
-main {
-  
-    min-height: 75vh;
-    width: 70vw;
-}
 
-form {
-    padding-top:20px;
-}
+    main {
 
+        min-height: 75vh;
+        width: 70vw;
+    }
 
-form input {
-    margin-top:10px;
-    font-size: 1.4rem;
-    height: 3rem;
-}
-
-.dropdown {
-    flex-direction: column;
-}
-
-.dropdown i {
-    padding-top:15px;
-    font-size: 1.7rem;
-}
+    form {
+        padding-top: 20px;
+    }
 
 
-.select-container img {
-    max-width: 2.5rem;
-}
+    form input {
+        margin-top: 10px;
+        font-size: 1.4rem;
+        height: 3rem;
+    }
 
-.select-container {
-    width: 60vw;
+    .dropdown {
+        flex-direction: column;
+    }
 
-}
+    .dropdown i {
+        padding-top: 15px;
+        font-size: 1.7rem;
+    }
 
-.select-container select {
-    width: 80px;
-}
 
-h2 {
-    color: #b35cfa;
-    font-size: 30px;
-}
-    
+    .select-container img {
+        max-width: 2.5rem;
+    }
+
+    .select-container {
+        width: 60vw;
+
+    }
+
+    .select-container select {
+        width: 80px;
+    }
+
+    h2 {
+        color: #b35cfa;
+        font-size: 30px;
+    }
+
 }
