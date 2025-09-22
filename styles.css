@@ -15,7 +15,7 @@ main {
     background: linear-gradient(145deg, #2c3e50, #34495e);
     padding: 2rem;
     border-radius: 1rem;
-    min-height: 45vh;
+    min-height: 50vh;
     width: 40vh;
 }
 
@@ -115,9 +115,54 @@ p {
 }
 
 
+
 @media (max-width: 500px) {
-    main {
-        width: 90vw;
-        padding: 1.5rem;
-    }
+ 
+
+
+main {
+  
+    min-height: 75vh;
+    width: 70vw;
+}
+
+form {
+    padding-top:20px;
+}
+
+
+form input {
+    margin-top:10px;
+    font-size: 1.4rem;
+    height: 3rem;
+}
+
+.dropdown {
+    flex-direction: column;
+}
+
+.dropdown i {
+    padding-top:15px;
+    font-size: 1.7rem;
+}
+
+
+.select-container img {
+    max-width: 2.5rem;
+}
+
+.select-container {
+    width: 60vw;
+
+}
+
+.select-container select {
+    width: 80px;
+}
+
+h2 {
+    color: #b35cfa;
+    font-size: 30px;
+}
+    
 }
