@@ -29,6 +29,7 @@ const updateFlag = (element) => {
     let countryCode = countryList[currCode];
     let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
     let img = element.parentElement.querySelector("img");
+
     if (img) {
         img.src = newSrc;
     }
@@ -64,8 +65,11 @@ const updateExchangeRate = async () => {
         msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount.toFixed(2)} ${toCurr.value}`;
         
     } catch (error) {
-        console.error("Error fetching exchange rate:", error);
-        msg.innerText = "Error: Unable to fetch exchange rates. Please try again.";
+        if (error.message.includes("HTTP error!") || error.message === "Currency rate not found") {
+            msg.innerText = error.message;
+        } else {
+            msg.innerText = "Error: Unable to fetch exchange rates. Please try again.";
+        }
     }
 };
 
